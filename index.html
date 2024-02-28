@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoteLand</title>
+  <link rel="stylesheet" href="./style.css">
+  <script async src="./main.js"></script>
+
+</head>
+<body>
+
+  <!-- screen -->
+
+  <section class="one" onclick="App()">
+    <span>
+      <img src="./Logo.png" alt="Noteland Logo">
+      <h1 class="note-land">NOTE LAND</h1>
+    </span>
+  </section>
+
+<!-- Main -->
+<section class="two">
+  <!-- Left -->
+  <div class="left">
+    <div class="top">
+      <span>
+        <img src="./Logo.png" alt="Noteland Logo">
+        <h1>NOTE LAND</h1>
+      </span>
+    </div>
+    <!-- list of notes -->
+    <section class="noteslist"></section>
+    <div class="bottom">
+      <button id="newNote">NEW NOTE</button>
+    </div>
+  </div>
+
+  <!-- Right -->
+  <div class="right">
+        <!-- default page -->
+        <div id="removeDiv">
+          <img src="./logo note-land.png" alt="File Image">
+          <h2><span class="notesFounded"> </span></h2>
+          <p>Add some notes from the left column</p>
+        </div>
+        <!-- createNote -->
+        <div class="createNote" id="AddingCreate">
+          <div class="createform">
+            <div class="button">&times;</div>
+            <!-- <img class="button" src="./wrong.png" alt=""> -->
+            <input type="text" id="createNoteTitle" placeholder="NOTE TITLE">
+            <textarea id="createNoteContent" placeholder="NOTE DESCRIPTION" cols="20" rows="7"></textarea>
+          </div>
+          <div class="createnotebutton">
+            <button id="createNoteButton">CREATE  NOTE</button>
+          </div>
+        </div>
+        <!-- Edit selected Note -->
+      <section class="editNote" id="AddingNote">
+        <div id="transparentBackground" class="transparent-background" style="display: none;"></div>
+
+        <div class="division">
+          <header>
+            <span class="headerright"></span>
+            <div class="headerleft">
+              <button id="newtask">NEW TASK</button>
+              <button id="deleteAllnotes">DELETE ALL NOTES</button>
+              <div id="button">&times;</div>
+            </div>
+          </header>
+          <div id="tasks">
+            <div class="notecontent"></div>
+            <div class="tasktitle">
+              <h3>Tasks List</h3>
+              <!-- List of Tasks -->
+              <div id="tasklist"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Adding a task -->
+
+      <section class="Addtask">
+        <div id="Addingtask">
+          <div id="crossbutton">&times;</div>
+          <input id="taskname" type="text" placeholder="TASK NAME"/>
+          <button id="createtask">CREATE TASK</button>
+        </div>
+      </section>
+
+  </div>
+</section>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,499 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap");
+
+.transparent-background {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.Addtask .highlighted {
+  background: linear-gradient(90.1deg, rgb(145, 218, 240) 30.9%, rgb(221, 107, 134) 63.8%);
+  color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Poppins";
+}
+
+/* one */
+.one span{
+  background-color: #460529;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+}
+
+.one img {
+  height: 100px;
+}
+
+.one h1 {
+  color: white;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-top: 40px; 
+}
+
+
+
+/* two */
+
+.two {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 25vw;
+  background-color: rgb(91, 51, 82);
+}
+
+.top span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.top img {
+  height: 100px;
+}
+
+.top h1 {
+  color: white;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-top: 40px;
+}
+.notelist {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 90vh;
+  overflow: scroll;
+  margin-bottom: 1rem;
+}
+.note {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 150px;
+  background-image: linear-gradient( 112.1deg,  rgb(41, 196, 196) 11.4%, #d7dae3 70.2% );
+  border: #ae7e7e;
+  width: 18vw;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  overflow: scroll;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.note button {
+  background-image: linear-gradient( 100.2deg,  rgb(156, 123, 170) 49.4%, rgb(34, 33, 33) 129.8% );
+  color: rgb(33, 31, 31);
+  font-weight: bold;
+  cursor: pointer;
+  padding: 20px 50px;
+  border: none;
+  margin: 0.8rem;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+.note h1 {
+  color: rgb(228, 91, 6);
+  font-size: 1.8rem;
+}
+.note p {
+  font-family: none;
+  font-size: 1.4rem;
+  color: rgb(11, 10, 97);
+}
+.note h3 {
+  font-family: "none";
+  color: #375670;
+  font-size: 1.5rem;
+}
+
+.tasklist {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: -10rem;
+}
+
+.task {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.task input {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.task p {
+  font-family: none;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.bottom button {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 0.5rem 5.5rem;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  background-image: radial-gradient( circle 400px at 6.8% 8.3%,  rgb(174, 8, 100) 0%, rgba(255,244,234,1) 100.2% );
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 75vw;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(242, 211, 12) 0%, rgb(48, 6, 74) 90% );
+}
+
+.right img {
+  height: 500px;
+  margin-bottom: 1rem;
+}
+
+.right h2 {
+  color: white;
+  margin-bottom: 1.7rem;
+  font-family: "Poppins";
+  font-weight: none;
+  text-align: center;
+}
+
+.right p {
+  color: white;
+  font-size: large;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: none;
+  font-weight: 200;
+}
+
+.createNote {
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.8rem;
+  width: 70vh;
+  border-radius: 20px;
+  font-weight: bold;
+  position: absolute;
+}
+
+#AddingCreate {
+  display: none;
+  position: fixed;
+  top: 9rem;
+  bottom: 10rem;
+  left: 43rem;
+}
+
+.createform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:white;
+  padding: 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.button {
+  display: flex;
+  justify-content: end;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: xx-large;
+}
+
+#createNoteTitle{
+  outline: none;
+  border: none;
+  border-bottom: 1px solid grey;
+  margin: 0.3rem 0;
+  font-size: 1.3rem;
+  padding: 0.7rem;
+  font-weight: bold;
+}
+
+textarea {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #535f5e;
+  margin: 0.3rem 0;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  background: none;
+  font-family: none;
+}
+
+.createnotebutton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#createNoteButton {
+  width: 35vh;
+  font-size: medium;
+  background-image: linear-gradient( 293.5deg,  rgb(82, 10, 64) 5.2%, rgb(241, 239, 103) 9.9%, rgb(220, 153, 81) 22.9%, rgb(216, 15, 226) 36.4%, rgb(163, 132, 191) 50.1%, rgb(228, 114, 180) 61.1%, rgb(135, 220, 218) 71.2%, rgb(247, 177, 48) 84.2%, rgb(96, 7, 47) 92.2% );
+  color: rgb(124, 14, 10);
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+  border: none;
+  margin: 0.8rem 0;
+  border-radius: 12px;
+  font-size: 1.3rem;
+}
+
+.editNote {
+  position: absolute;
+}
+
+#AddingNote {
+  display: none;
+  position: fixed;
+  top: 0rem;
+  left: 21.5rem;
+}
+
+.division{
+  display: grid;
+  grid-template-rows: 16% 84%;
+  background: rgb(9, 8, 72);
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  height: 10vh;
+  width: 79vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: radial-gradient( circle farthest-corner at 97.4% 91.4%,   rgba(0,0,0,1) 8.4% , rgb(213, 33, 120) 92.4%);
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.headerright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  margin: 2rem;
+  color:white;
+}
+
+.headerleft {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 2.5rem;
+  width: 30%;
+}
+#crossbutton{
+  cursor: pointer;
+  text-align: end;
+  font-size: xx-large;
+}
+#newtask {
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.79rem;
+  color: white;
+  border: none;
+  font-weight: none;
+  border-radius: 12px;
+  background-image: linear-gradient( 90.1deg,  rgb(145, 218, 240) 30.9%, rgb(221, 107, 134) 63.8% );
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+#deleteAllnotes{
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  font-size: 0.79rem;
+  color: white;
+  border: none;
+  font-weight: none;
+  border-radius: 12px;
+  background-image: linear-gradient(to right,red,rgb(187, 137, 137));
+  cursor: pointer;
+}
+
+#button {
+  margin-bottom: 4rem;
+  margin-left: 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.2rem 0.2rem 0.2rem 0.3rem;
+  border-radius: 20%;
+}
+
+#tasks{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  width: 60vw;
+  height: 75vh;
+  margin-left: 7rem;
+  margin-bottom: -3rem;
+  margin-top: 2rem;
+  background: white;
+  font-family: none;
+  border-radius: 20px;
+  font-size: 1.3rem;
+}
+.notecontent{
+  color: #a2126d;
+}
+#tasks h3 {
+  font-family: "none";
+  color:orangered;
+  font-size: 1.8rem;
+  margin: 0.5rem 1rem;
+}
+
+#tasks .tasklist {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#tasks.task {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.2em 1.4rem;
+}
+
+#tasks .task input {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+#tasks .task p {
+  font-family: none;
+  font-size: 1.4rem;
+  color: #460529;
+  padding: 0.5rem 1rem;
+}
+
+.Addtask {
+  position: absolute;
+}
+
+#Addingtask{
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 15rem;
+  left: 38rem;
+  background: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 20px;
+  z-index: 1;
+}
+#Addingtask input {
+  width: 100%;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-family: none;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  font-size: 1.4rem;
+}
+
+#Addingtask button {
+  width: 300px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5rem 5rem;
+  border-radius: 12px;
+  border: none;
+  background:linear-gradient(to top,rgb(220, 128, 143),blue);
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
